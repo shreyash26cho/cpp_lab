@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-// Base Class: Vehicle
+
 class Vehicle {
 protected:
     string vehicleID, make, model;
@@ -26,7 +26,7 @@ public:
     void returnVehicle() { isRented = false; }
 };
 
-// Derived Class: Car
+
 class Car : public Vehicle {
     int numberOfDoors;
     string fuelType;
@@ -42,7 +42,7 @@ public:
     }
 };
 
-// Derived Class: Motorcycle
+
 class Motorcycle : public Vehicle {
     string engineType;
     bool hasSidecar;
@@ -58,7 +58,7 @@ public:
     }
 };
 
-// Derived Class: Truck
+
 class Truck : public Vehicle {
     double cargoCapacity;
     int numberOfAxles;
@@ -74,7 +74,7 @@ public:
     }
 };
 
-// Rental System
+
 class RentalSystem {
     vector<Vehicle*> vehicles;
 public:
